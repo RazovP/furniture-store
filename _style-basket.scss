@@ -1,0 +1,198 @@
+.top-basket{
+    height: 400px;
+    background-image: url(./image/basket-bcg-top.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__title{
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 70px;
+        margin-top: 126px;
+    }
+}
+.basket-box{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+
+}
+.btm-mobile{
+    display: none;
+}
+.basket{
+
+    &__name-box{
+        display: flex;
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+    &__input-box{
+        display: flex;
+        flex-direction: column;
+        gap:42px;
+        padding-left: 27px;
+        padding-top: 35px;
+        width: 288px;
+
+    }
+    &__input-box input{
+        border: none;
+        border-bottom: 1px solid rgb(202, 205, 216);
+        background-color: transparent;
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+    }
+    &__form{
+        border-radius: 20px;
+        background: rgb(247, 246, 246); 
+        height: 556px;
+        grid-column: span 4;
+        
+        &_total-price{
+            margin-top: 64px;
+            margin-bottom: 18px;
+            text-align: center;
+        }    
+        &_total{
+            color: rgb(0, 0, 0);
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 29px;
+        }
+        &_price{
+            color: rgb(0, 0, 0);
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 29px;
+        }
+        &_btm-box{
+            display: flex;
+            justify-content: center;
+        }
+        &_btm{
+            box-sizing: border-box;
+            border: 1px solid rgb(4, 4, 4);
+            border-radius: 20px;
+            color: rgb(0, 0, 0);
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0px;
+            text-align: center;
+            width: 290px;
+            height: 41px;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        &_h1{
+            color: rgb(0, 0, 0);
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 29px;
+            text-align: center;
+            padding-top: 42px;
+
+        }
+    }
+    &__content{
+        grid-column: span 8;
+
+    }
+    &__item{
+        padding-top: 25px;
+        margin-bottom: 32px;
+        display: flex;
+        border-top: 0.5px solid rgb(202, 205, 216);
+        justify-content: space-between;
+    }
+    &__left{
+        display: flex;
+        gap: 32px;
+        &_img{
+            height: 173px;
+            width: 173px;
+        }
+    }
+    &__info{
+        width: 226px;
+        gap: 16px;
+    }
+    &__link-box{
+        display: flex;
+        gap: 30px;
+
+        
+        
+        &_link{
+            font-family: Montserrat;
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 210%;
+            color: rgb(0, 0, 0);
+            text-decoration-line: underline;
+            
+        }
+        &_link:hover{
+            text-decoration: none;
+        }
+    }
+   
+    &__input{
+        border-radius: 6px;
+        font-family: Poppins;
+        background: rgb(247, 246, 246);
+        width: 71px;
+        height: 51px;
+        border-color:  rgb(247, 246, 246);
+        color: rgb(0, 0, 0);
+        border: none;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 210%;
+        text-align: center;
+    }
+    &__btm-box{
+        display: flex;
+        gap: 8px;
+        &_btm{
+            font-family: Montserrat;
+            box-sizing: border-box;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 50px;
+            color: rgb(2, 2, 2);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            text-align: center;
+            width: 200px;
+            height: 37px;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+    }
+}   
+@media (max-width: 1024px){
+    .basket-box{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .basket__form{
+        max-width: 376px;
+    }
+    .basket__btm-box_btm:hover{
+        background-color: black;
+        color: white;
+    }
+}

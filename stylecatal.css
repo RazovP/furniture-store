@@ -1,0 +1,91 @@
+.top-catalog{
+    height: 400px;
+    background-image: url(./image/catalog-bcg-top.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.top-catalog__title{
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 70px;
+    margin-top: 126px;
+}
+.catalog__top-panel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 64px;
+    margin-bottom: 32px;
+    gap: 14px;
+}
+.catalog__filtr_btm{
+    position: relative;
+    
+}
+.catalog__nav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.catalog__nav_link{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.catalog__nav_link:hover{
+    text-decoration-line: underline;
+    color:blue;
+}
+
+.catalog__display_order{
+    background-color: transparent;
+    box-sizing: border-box;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 20px;
+    padding-top: 9px;
+    padding-bottom: 11px;
+    padding-left: 23px;
+    padding-right: 54px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    appearance: none;
+    background-image: url(./image/catalog/arrow-select.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 15px) center;
+    cursor: pointer;
+}
+.product{
+    position:relative;
+
+}
+.product__icon{
+    position: absolute;
+    gap: 21px;
+    padding-top: 10px;
+    left: 300px;
+    display:none;
+}
+.product__icon_size{
+        height: 24px;
+        width: 24px;
+    }
+    
+
+.product:hover .product__icon{
+    display: flex;
+}
+
+.catalog__nav_link-down{
+color: rgb(0, 0, 0);
+display: block;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-decoration-line: underline;
+margin-top: 32px;
+}

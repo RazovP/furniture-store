@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  
+
+</head>
+
+<body>
+    <section class="top-basket center">
+        <header class="header">
+            <a href="./index.html"><img class="header__logo" src="./image/logo.svg" alt="логотип"></a>
+            <input placeholder="Поиск" class="header__input" type="text">
+            <nav class="header__menu">
+                <a class="header__link" href="./catalog.html">Каталог</a>
+                <a class="header__link" href="./basket.html">Корзина</a>
+            </nav>
+            <nav class="header__mobile_menu">
+                <a href="#"><img class="header__mobile_link" src="./image/mobile/search.svg" alt="Поиск"></a>
+                <a href="./catalog.html"><img class="header__mobile_link" src="./image/mobile/catalog.svg" alt="Каталог"></a>
+                <a href="./basket.html"><img class="header__mobile_link" src="./image/mobile/basket.svg" alt="Корзина"></a>
+            </nav>
+        </header>
+        <h1 class="top-basket__title">Корзина</h1>
+    </section>
+    <div class="basket center">
+        <div class="basket-box">
+            <section class="basket__content">
+                <div class="basket__name-box">
+                    <p>Товар</p>
+                    <p>К-во</p>
+                </div>
+                <div class="basket__item">
+                    <div class="basket__left">
+                        <img class="basket__left_img" src="./image/catalog/stol-MENU.jpeg" alt="Стол MENU">
+                        <div class="basket__info">
+                            <h3 class="product__tovar">Стол MENU</h3>
+                            <p class="product__opis">Для того чтобы трапезничать было приятно, необходим правильный обеденный стол.</p>
+                            <p class="product__price">34 000 руб.</p>
+                            <div class="basket__link-box">
+                                <a class="basket__link-box_link" href="#">Избарнное</a>
+                                <a class="basket__link-box_link" href="#">Удалить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <input class="basket__input" type="number" value="1" min="1">
+                </div>
+                <div class="basket__item">
+                    <div class="basket__left">
+                        <img class="basket__left_img" src="./image/NASTAN.jpeg" alt="Диван NASTAN">
+                        <div class="basket__info">
+                            <h3 class="product__tovar">Диван NASTAN</h3>
+                            <p class="product__opis">Модель отличается простотой линий и форм, отсутствием броского декора.</p>
+                            <p class="product__price">80 000 руб.</p>
+                            <div class="basket__link-box">
+                                <a class="basket__link-box_link" href="#">Избарнное</a>
+                                <a class="basket__link-box_link" href="#">Удалить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <input class="basket__input" type="number" value="1" min="1">
+                </div>
+                <div class="basket__btm-box">
+                    <button class="basket__btm-box_btm">Очистить корзину</button>
+                    <button class="basket__btm-box_btm">Продолжить покупки</button>
+                </div>
+            </section>
+            <section class="basket__form">
+                <h1 class="basket__form_h1">Оформление заказа</h1>
+                <form class="basket__input-box">
+                    <input placeholder="Имя Фамилия" type="text">
+                    <input placeholder="+ 7 904 000 80 80" type="tel">
+                    <input placeholder="Адрес доставки" type="text">
+                </form>    
+                <div class="basket__form_total-price">
+                    <span class="basket__form_total">Итого:</span>
+                    <span class="basket__form_price">128 000 руб.</span>
+                </div>
+                <div class="basket__form_btm-box">
+                <button class="basket__form_btm">Оформить заказ</button>
+            </div>
+            </section>
+        </div> 
+        <h2 class="catalog__title">Специальные предложения</h2>
+       
+        <div class="product-box">
+                <article class="catalog__product product">
+                    <img class="product__img" src="./image/VODA.jpeg" alt="Люстра VODA">
+                    <h3 class="product__tovar">Люстра VODA</h3>
+                    <p class="product__opis">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
+                    <div class="product__box-price">
+                        <p class="product__price">45 000 руб.</p>
+                        <p class="product__price product__price_old">67 000 руб.</p>
+                    </div>
+                </article>
+                <article class="catalog__product product">
+                    <img src="./image/Ronald.jpeg" alt="Диван ROLAND">
+                    <h3 class="product__tovar">Диван ROLAND</h3>
+                    <p class="product__opis">Модель отличается простотой линий и форм, отсутствием броского декора.</p>
+                    <div class="product__box-price">
+                        <p class="product__price">156 000 руб.</p>
+                        <p class="product__price product__price_old">198 000 руб.</p>
+                    </div>
+                </article>
+                <article class="catalog__product product">
+                    <img src="./image/VENT.jpeg" alt="Комод VENT">
+                    <h3 class="product__tovar">Комод VENT</h3>
+                    <p class="product__opis">Европейский дуб - отличается особой прочностью и стабильностью.</p>
+                    <div class="product__box-price">
+                        <p class="product__price">34 000 руб.</p>
+                        <p class="product__price product__price_old">45 000 руб.</p>
+                    </div>
+                </article>
+        </div>
+        <div class="btm">
+                <a class="btm__link" href="./catalog.html">Перейти в каталог</a>
+        </div>
+        <div class="btm btm-mobile">
+            <a class="btm__link" href="#">Показать ещё</a>
+        </div>    
+    </div>
+
+    <footer class="footer center">
+        <a href="./index.html"><img class="footer__logo" src="./image/logo-footer.svg" alt="logofooter"></a>
+        <div class="footer__content">
+            <div class="footer__menu-box">
+                <div class="footer__menu">
+                    <h4 class="footer__h">Меню</h4>
+                    <nav>
+                        <a class="footer__link" href="./index.html">Главная</a>
+                        <a class="footer__link" href="./catalog.html">Каталог</a>
+                        <a class="footer__link" href="./basket.html">Корзина</a>
+                    </nav>
+                </div>
+                <div class="footer__contact">
+                    <h4 class="footer__h">Контакты</h4>
+                    <a class="footer__link" href="number">+7 908 800 80 80</a>
+                    <a class="footer__link" href="mail">help@interier.com</a>
+                    <div class="footer__soclink">
+                        <a href="https://vk.com/"><img class="footer__soclink_soc" src="./image/vk.svg" alt="vk"></a>
+                        <a href="#"><img class="footer__soclink_soc" src="./image/telegram.svg" alt="telegram"></a>
+                        <a href="#"><img class="footer__soclink_soc" src="./image/dzen.svg" alt="dzen"></a>
+                    </div>
+                </div>
+            </div>
+            <form class="footer__news" action="#">
+                <p class="footer__text">Получайте наши новости и обновления</p>
+                <input placeholder="Ваш e-mail" class="footer__input" type="email">
+                <button class="footer__button">Подписаться</button>
+            </form>
+        </div>
+    </footer>
+</body>
+
+</html>
