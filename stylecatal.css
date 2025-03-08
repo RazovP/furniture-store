@@ -41,6 +41,7 @@
 }
 
 .catalog__display_order{
+    font-family: Montserrat;
     background-color: transparent;
     box-sizing: border-box;
     border: 1px solid rgb(196, 196, 196);

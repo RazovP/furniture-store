@@ -521,6 +521,16 @@ body {
   cursor: pointer;
 }
 
+.basket__btm-box_btm:hover {
+  background-color: black;
+  color: white;
+}
+
+.basket__form_btm:hover {
+  background-color: black;
+  color: white;
+}
+
 @media (max-width: 1024px) {
   .basket-box {
     display: flex;
@@ -528,10 +538,6 @@ body {
   }
   .basket__form {
     max-width: 376px;
-  }
-  .basket__btm-box_btm:hover {
-    background-color: black;
-    color: white;
   }
 }
 .catalog__display {
@@ -553,6 +559,7 @@ body {
   z-index: 1;
   padding: 40px 48px;
   border: none;
+  box-shadow: 0 4px 8px 12px rgba(0, 0, 0, 0.2);
 }
 .filtr__left {
   width: 190px;

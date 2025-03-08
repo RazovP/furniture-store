@@ -182,6 +182,14 @@
 
     }
 }   
+.basket__btm-box_btm:hover{
+    background-color: black;
+    color: white;
+}
+.basket__form_btm:hover{
+    background-color: black;
+    color: white;
+}
 @media (max-width: 1024px){
     .basket-box{
         display: flex;
@@ -191,8 +199,5 @@
     .basket__form{
         max-width: 376px;
     }
-    .basket__btm-box_btm:hover{
-        background-color: black;
-        color: white;
-    }
+
 }
